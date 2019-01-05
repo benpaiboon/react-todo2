@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Photos from './components/Photos';
 import About from './components/About';
 import Contact from './components/Contact';
-import Post from './components/Post';
+import Post from './components/Post';;
 // import Todos from './Todos';
 // import AddTodo from './AddTodo';
 
@@ -38,6 +39,7 @@ class App extends Component {
           <Navbar />
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/photos' component={Photos} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/:post_id' component={Post} />
