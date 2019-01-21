@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Photos from './components/Photos';
 import About from './components/About';
 import Contact from './components/Contact';
+import Table from './components/Table';
 import Post from './components/Post';;
 // import Todos from './Todos';
 // import AddTodo from './AddTodo';
@@ -42,6 +43,7 @@ class App extends Component {
             <Route path='/photos' component={Photos} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
+            <Route path='/table' component={Table} />
             <Route path='/:post_id' component={Post} />
           </Switch>
         </div>
