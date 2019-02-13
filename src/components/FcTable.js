@@ -105,15 +105,15 @@ class FcTable extends Component {
         />
 
         <div className="row">
-          <table id="table-export">
+          <table id="table-export" className="striped centered">
             <tbody>
-              <tr className="grey lighten-4">
+              <tr className="yellow accent-1">
                 <td></td>
                 <td colSpan="2">Concave Surface (CC)</td>
                 <td colSpan="2">Convexe Surface (CX)</td>
                 <td colSpan="2">Machine Recipe</td>
               </tr>
-              <tr className="grey lighten-4">
+              <tr className="yellow accent-1">
                 <td>#</td>
                 <td>Usability</td>
                 <td>Ratio	</td>
@@ -128,12 +128,12 @@ class FcTable extends Component {
               <br></br>
               <br></br>
 
-              <tr className="grey lighten-4">
+              <tr className="yellow accent-1">
                 <td></td>
                 <td colSpan="4" className="center-align">R&D Ratios</td>
                 <td colSpan="5" className="center-align">Forecasted ratios</td>
               </tr>
-              <tr className="grey lighten-4">
+              <tr className="yellow accent-1">
                 <td className="center-align">Ratios</td>
                 <td className="center-align">CC</td>
                 <td className="center-align">Ratios</td>
