@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Photos from './components/Photos';
 import About from './components/About';
 import Contact from './components/Contact';
+import FcTable from './components/FcTable';
 import Table from './components/Table';
 import Post from './components/Post';;
 // import Todos from './Todos';
@@ -44,6 +45,7 @@ class App extends Component {
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/table' component={Table} />
+            <Route path='/fctable' component={FcTable} />
             <Route path='/:post_id' component={Post} />
           </Switch>
         </div>
