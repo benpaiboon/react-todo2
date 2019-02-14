@@ -23,12 +23,27 @@ class FcTable extends Component {
   }
   render() {
     const macList = this.state.macreport.map(mac => {
+
+      let cc_pc = '';
+      let cx_pc = '';
+
+      // Check percent
+      if (typeof (mac.CC_use) === "number")
+        cc_pc = '%';
+      else if (typeof (mac.CC_use) !== "number")
+        cc_pc = '';
+
+      if (typeof (mac.CX_use) === "number")
+        cx_pc = '%';
+      else if (typeof (mac.CX_use) !== "number")
+        cx_pc = '';
+
       return (
         <tr key={mac._id}>
           <td>{mac.subname}</td>
-          <td>{mac.CC_use}</td>
+          <td>{mac.CC_use}{cc_pc}</td>
           <td>{mac.CC_ratio}</td>
-          <td>{mac.CX_use}</td>
+          <td>{mac.CX_use}{cx_pc}</td>
           <td>{mac.CX_ratio}</td>
           <td>{mac.CC_mac}</td>
           <td>{mac.CX_mac}</td>
