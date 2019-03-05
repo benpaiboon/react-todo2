@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-data-query": "^1.5.0",
+    "@progress/kendo-react-excel-export": "^2.7.1",
     "axios": "^0.18.0",
     "namor": "^1.1.1",
     "react": "^16.7.0",

@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 // import Post from './components/Post';;
 import Todos from './Todos';
 import AddTodo from './AddTodo';
+import ExportExcel from './ExportExcel'
 
 class App extends Component {
   
@@ -20,13 +21,14 @@ class App extends Component {
     ],
     content: ''
   }
-  // deleteTodo = (id) => {
-  //   // console.log(id);
-  //   const todos = this.state.todos.filter(todo => {
-  //     return todo.id !== id;
-  //   });
-  //   this.setState({ todos });
-  // }
+
+  deleteTodo = (id) => {
+    // console.log(id);
+    const todos = this.state.todos.filter(todo => {
+      return todo.id !== id;
+    });
+    this.setState({ todos });
+  }
   // addTodo = (todo) => {
   //   let todoId = Math.random();
   //   let newTodoItem = {
@@ -74,11 +76,14 @@ class App extends Component {
       <div className="todos-app container">
         <h1 className="center blue-text">Todo's</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
+        
         <AddTodo 
           handleSubmit={this.handleSubmit} 
           handleChange={this.handleChange} 
           allState={this.state} 
           />
+
+          <ExportExcel />
       </div>
     );
   }
